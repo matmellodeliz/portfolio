@@ -3,30 +3,32 @@
     margin: 0;
     vertical-align: baseline;
     list-style: none;
-    border: 0
+    border: 0;
+    box-sizing:border-box;
 }
 html{
     scroll-behavior: smooth;
 }
-body{        
-    padding-bottom: 40px;
+body{
+    padding-bottom: 40px; /* pro footer */ 
     background-image: url(https://static.scientificamerican.com/sciam/cache/file/1FCF0242-35AD-4E97-9558FBD4278568CD_source.jpg);
     background-color: rgba(218, 203, 203, 0.4);
     background-blend-mode: overlay;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-top: 60px;
+    padding-top: 60px; /* pro header */ 
+    /* foto de background sempre estatica */ 
 }
 .container{
-    width: 90%;
-    margin: 0 auto; /* centraliza a div */
+    width: 90%; /* usa apenas 90% da tela no portfolio */ 
+    margin: 0 auto;
     
 }
-.fixed-header, .fixed-footer{
+.fixed-header, .fixed-footer{ /* header e footer acompanham o scroll */ 
     width: 100%;
     position: fixed; 
-    background: rgba(0,0,0);
+    background: rgba(51, 51, 51);
     color: #fff;
     cursor: default;
 }
@@ -49,21 +51,28 @@ body{
     display: inline-block;
     margin: 0 10% 0 10px;
 }
+.header a:hover{
+    color:rgb(20, 149, 235);
+    transition: 0.5s;
+}
+#sobre{
+    scroll-margin-top: -20px;
+}
 #sobretexto{
     padding: 30px;
     text-align: center;
     color: white;
     font-size: 22px;
-    position: relative;
     width: 50%;
     margin: 0 auto;
     line-height: 1.7;
     text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+    /* text-shadow pra criar uma borda preta no texto */ 
 }
 #sobre .logo{
     display: flex;
     justify-content: center;
-    padding-top: 5%;
+    padding-top: 100px;
 }
 
 #projetos{
@@ -86,7 +95,7 @@ body{
     margin: 0 auto;
 }
 
-.pagina {
+.pagina { /* escolha qual site aparece com o click do numero da pagina */ 
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid rgba(128, 128, 128, 0.548);
     border-top: 1px solid rgba(128, 128, 128, 0.548);
@@ -111,7 +120,7 @@ body{
 
 .pagina:hover {
     background-color: rgba(128, 128, 128, 0.548);
-    transition: 1s;
+    transition: 0.5s;
     cursor: pointer;
 }
 ul {
@@ -119,8 +128,7 @@ ul {
     overflow: hidden;
 }
 
-li a,
-.dropbtn {
+li a, .dropbtn {
     display: inline-block; 
     color: white;
     text-align: center;
@@ -128,5 +136,46 @@ li a,
     text-decoration: none;
 }
 li {
-    float: left;
+    float: left; /* manter escolha de paginas em linha */ 
 }
+#contato{
+    color: white;
+    font-size: 17px;
+    text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+    line-height: 1.7;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    position:absolute;
+    left: 40%;
+    padding-bottom: 80px;
+}
+.formulario{
+    font-size: 20px;
+}
+input, textarea{
+    width:100%;
+    padding: 10px;
+    margin:2px 0 20px 0;
+    font-family:inherit;
+    border:0; 
+    border-radius:5px;
+}
+#assunto{
+    resize: vertical; /* aumentar a box */ 
+    height: 150px;
+}
+.enviar {
+    padding:10px;
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    width:100%;
+}
+.enviar:hover{
+    cursor: pointer;
+}
+#projetos {
+    scroll-margin-top: 100px;
+  }
