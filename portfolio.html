@@ -6,30 +6,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="javascript">
+        function Show1() 
+    {
+            document.getElementById("image").src = "https://visme.co/blog/wp-content/uploads/2020/05/Dont-Fear-Colors-And-Contrast.jpg";  
+        }
+    
+        function Show2() 
+    {
+            document.getElementById("image").src = "https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.cHDL~36fa1/w:auto/h:auto/q:98/https://s15165.pcdn.co/wp-content/uploads/2019/10/Galleon-and-Caravan.png"; 
+        }
+        function Show3() 
+    {
+            document.getElementById("image").src = "https://colibriwp.com/blog/wp-content/uploads/2019/06/big-sized-hero-images.png"; 
+        }
+        function Show4() 
+    {
+            document.getElementById("image").src = "https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/2659/posts/37331/image-upload/Porto%20-%20Multipurpose%20Responsive%20HTML%20Template-intro.jpg"; 
+        }
+        function Show5() 
+    {
+            document.getElementById("image").src = "https://assets.awwwards.com/awards/5b67ee95d566e.jpeg"; 
+        }
+        function Show6() 
+    {
+            document.getElementById("image").src = "https://rapidweblaunch.com/wp-content/uploads/2021/08/external-vr-website-example-1.jpg"; 
+        }
+        
+    </script>
     <title>Portifólio</title>
 </head>
 
 <body id="home">
-    <ul class="droptop">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li class="dropdown">
-            <a href="" class="dropbtn">Dropdown</a>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+    <div class="fixed-header">
+            <nav class="header">
+                <a href="#">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+    </div>
+    <div class="container">
+        <div id="sobre">
+            <div class="logo"><img src="https://resultsig.com/wp-content/uploads/2021/08/MML-Logo-Colour.png" alt="logo" width="40%" height="25%""></div>
+            <div id="sobretexto">
+                Há 29 anos trabalhando com projetos de design e programação para atender melhor as novas tendências.
+                Com inovação e conhecimento profundo sobre empreendedorismo, nós trazemos para a sua empresa, novidades que
+                irão alavancar seu marketing digital.
             </div>
-        </li>
-    </ul>
-    <ul class="centrado">
-        <li><a href="" id="paginas" class="pagina anterior">&laquo;</a></li>
-        <li><a href="" class="pagina">1</a></li>
-        <li><a href="" class="pagina">2</a></li>
-        <li><a href="" class="pagina">3</a></li>
-        <li><a href="" class="pagina proxima">&raquo;</a></li>
-    </ul>
-    <div style="margin-top: 900px;">aaaaa</div>
+        </div>
+        <div id="projetos">
+            <div style="padding-top: 30px; font-family: Arial, Helvetica, sans-serif; font-weight: 700;">PROJETOS</div>
+            <img class="imgsite" id="image" src="https://visme.co/blog/wp-content/uploads/2020/05/Dont-Fear-Colors-And-Contrast.jpg" alt="dunkin" height="500px">
+            <ul class="centrado">
+                <li><a class="pagina primeira" onclick="Show1()">1</a></li>
+                <li><a class="pagina" onclick="Show2()">2</a></li>
+                <li><a class="pagina" onclick="Show3()">3</a></li>
+                <li><a class="pagina" onclick="Show4()">4</a></li>
+                <li><a class="pagina" onclick="Show5()">5</a></li>
+                <li><a class="pagina ultima" onclick="Show6()">6</a></li>
+            </ul>
+        </div>
+        <div style="margin-top: 2000px">aaaa</div>
+    </div>
+    <div class="fixed-footer">
+        <div class="container">Copyright &copy; 2022 Mateus Mello de Liz</div>
+    </div>
 
 </body>
 
