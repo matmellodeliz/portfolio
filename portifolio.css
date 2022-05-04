@@ -8,12 +8,86 @@
 html{
     scroll-behavior: smooth;
 }
+body{        
+    padding-bottom: 40px;
+    background-image: url(https://static.scientificamerican.com/sciam/cache/file/1FCF0242-35AD-4E97-9558FBD4278568CD_source.jpg);
+    background-color: rgba(218, 203, 203, 0.4);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 60px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto; /* centraliza a div */
+    
+}
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed; 
+    background: rgba(0,0,0);
+    color: #fff;
+    cursor: default;
+}
+.fixed-header{
+    top: 0;
+    font-size: 25px;
+    padding: 5px;
+}
+.fixed-footer{
+    bottom: 0;
+    font-size: 17px;
+}    
+.header{
+    text-align: center;
+}
+.header a{
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 25px;
+    display: inline-block;
+    margin: 0 10% 0 10px;
+}
+#sobretexto{
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.7;
+    text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+}
+#sobre .logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+#projetos{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 650px;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.imgsite{
+    margin-top: 20px;
+    width: 60%;
+}
+
 .centrado {
     display: table;
     margin: 0 auto;
 }
 
 .pagina {
+    background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid rgba(128, 128, 128, 0.548);
     border-top: 1px solid rgba(128, 128, 128, 0.548);
     color: rgb(20, 149, 235);
@@ -22,16 +96,14 @@ html{
     border-left: 1px solid rgba(128, 128, 128, 0.548);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
-    float: left;
 }
-
-.proxima {
+.ultima {
     border-right: 1px solid rgba(128, 128, 128, 0.548);
     border-bottom-right-radius: 3px;
     border-top-right-radius: 3px;
 }
 
-.anterior {
+.primeira {
     margin-left: 10px;
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
@@ -40,8 +112,8 @@ html{
 .pagina:hover {
     background-color: rgba(128, 128, 128, 0.548);
     transition: 1s;
+    cursor: pointer;
 }
-
 ul {
     list-style-type: none;
     overflow: hidden;
@@ -49,55 +121,12 @@ ul {
 
 li a,
 .dropbtn {
-    display: inline-block;
+    display: inline-block; 
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-
-li a:hover,
-.dropdown:hover .dropbtn {
-    background-color: red;
-    transition: 1s;
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    text-align: left;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    transition: 0.5s;
-}
-
 li {
     float: left;
-}
-
-.droptop {
-    background-color: #333;
-    position: sticky;
-    top: 0;
 }
