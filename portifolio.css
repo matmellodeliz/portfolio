@@ -78,7 +78,7 @@ body{
 #projetos{
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
-    height: 650px;
+    height: 800px;
     justify-content: center;
     margin: 0 auto;
     text-align: center;
@@ -87,10 +87,11 @@ body{
 }
 .imgsite{
     margin-top: 20px;
-    width: 60%;
+    width: 75%;
+    height: 75%;
 }
 
-.centrado {
+.centrado { /* colocar a lista de paginas no meio */
     display: table;
     margin: 0 auto;
 }
@@ -128,13 +129,6 @@ ul {
     overflow: hidden;
 }
 
-li a, .dropbtn {
-    display: inline-block; 
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
 li {
     float: left; /* manter escolha de paginas em linha */ 
 }
@@ -148,6 +142,7 @@ li {
     position:absolute;
     left: 40%;
     padding-bottom: 80px;
+    scroll-margin-top: 50px;
 }
 .formulario{
     font-size: 20px;
@@ -177,5 +172,5 @@ input, textarea{
     cursor: pointer;
 }
 #projetos {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 30px;
   }
